@@ -28,7 +28,7 @@ async def on_message(message):
 
     elif message.content.lower().startswith('$quiz'):
         question, image_url = random.choice(list(questions.items()))
-        await message.channel.send(f'Pregunta: {question}')
+        await message.channel.send('Pregunta: {question}')
         await message.channel.send(image_url)  
 
 
